@@ -1,4 +1,4 @@
-# Quiz Project
+# Quiz DOM Manipulation
 
 This project is a simple quiz application created to practice CSS media queries, DOM manipulation and JavaScript form validation. The quiz consists of 10 multiple-choice questions, and the goal is to check how many questions the user answers correctly.
 
