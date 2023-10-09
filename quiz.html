@@ -11,12 +11,12 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <main id="top">
+    <main>
         <form action="" class="quiz" id="quiz" name="quiz">
-            <section class="preguntaYRespuestas">
+            <section class="preguntaYRespuestas" id="top">
                 <h2 class="pregunta">1: ¿De qué empresa es el sistema operativo iOS?</h2>
                 <div class="contenedorRespuestas">
-                    <input type="radio" id="respuesta1A" name="respuesta1" value="apple">
+                    <input type="radio" id="respuesta1A" name="respuesta1" value="apple" required>
                     <label for="respuesta1A">Apple</label>
                     <input type="radio" id="respuesta1B" name="respuesta1" value="microsoft">
                     <label for="respuesta1B">Microsoft</label>
@@ -29,7 +29,7 @@
             <section class="preguntaYRespuestas">
                 <h2 class="pregunta">2: ¿Cuál de los siguientes no es un lenguaje de programación?</h2>
                 <div class="contenedorRespuestas">
-                    <input type="radio" id="respuesta2A" name="respuesta2" value="python">
+                    <input type="radio" id="respuesta2A" name="respuesta2" value="python" required>
                     <label for="respuesta2A">Python</label>
                     <input type="radio" id="respuesta2B" name="respuesta2" value="c++">
                     <label for="respuesta2B">C++</label>
@@ -42,7 +42,7 @@
             <section class="preguntaYRespuestas">
                 <h2 class="pregunta">3: ¿Qué tecnología inalámbrica se utiliza para conectar dispositivos cercanos, como auriculares y teléfonos móviles?</h2>
                 <div class="contenedorRespuestas">
-                    <input type="radio" id="respuesta3A" name="respuesta3" value="nfc">
+                    <input type="radio" id="respuesta3A" name="respuesta3" value="nfc" required>
                     <label for="respuesta3A">NFC</label>
                     <input type="radio" id="respuesta3B" name="respuesta3" value="gps">
                     <label for="respuesta3B">GPS</label>
@@ -55,7 +55,7 @@
             <section class="preguntaYRespuestas">
                 <h2 class="pregunta">4: ¿Cuál es el nombre del asistente virtual de Amazon?</h2>
                 <div class="contenedorRespuestas">
-                    <input type="radio" id="respuesta4A" name="respuesta4" value="siri">
+                    <input type="radio" id="respuesta4A" name="respuesta4" value="siri" required>
                     <label for="respuesta4A">Siri</label>
                     <input type="radio" id="respuesta4B" name="respuesta4" value="googleassistant">
                     <label for="respuesta4B">Google Assistant</label>
@@ -68,7 +68,7 @@
             <section class="preguntaYRespuestas">
                 <h2 class="pregunta">5: ¿Qué resolución tienen los televisores 4K?</h2>
                 <div class="contenedorRespuestas">
-                    <input type="radio" id="respuesta5A" name="respuesta5" value="2160p">
+                    <input type="radio" id="respuesta5A" name="respuesta5" value="2160p" required>
                     <label for="respuesta5A">3840x2160p</label>
                     <input type="radio" id="respuesta5B" name="respuesta5" value="1080p">
                     <label for="respuesta5B">1920x1080p</label>
@@ -81,12 +81,12 @@
             <section class="preguntaYRespuestas">
                 <h2 class="pregunta">6: ¿Cuál de los siguientes términos se asocia comúnmente con la protección de datos y la privacidad en línea?</h2>
                 <div class="contenedorRespuestas">
-                    <input type="radio" id="respuesta6A" name="respuesta6" value="vpn">
+                    <input type="radio" id="respuesta6A" name="respuesta6" value="vpn" required>
                     <label for="respuesta6A">VPN</label>
                     <input type="radio" id="respuesta6B" name="respuesta6" value="gif">
                     <label for="respuesta6B">GIF</label>
-                    <input type="radio" id="respuesta6C" name="respuesta6" value="xd">
-                    <label for="respuesta6C">XD</label>
+                    <input type="radio" id="respuesta6C" name="respuesta6" value="http">
+                    <label for="respuesta6C">HTTP</label>
                     <input type="radio" id="respuesta6D" name="respuesta6" value="cpu">
                     <label for="respuesta6D">CPU</label>
                 </div>
@@ -94,7 +94,7 @@
             <section class="preguntaYRespuestas">
                 <h2 class="pregunta">7: ¿Cómo se denomina engañar a alguien para que revele información confidencial, como contraseñas o información financiera?</h2>
                 <div class="contenedorRespuestas">
-                    <input type="radio" id="respuesta7A" name="respuesta7" value="phising">
+                    <input type="radio" id="respuesta7A" name="respuesta7" value="phising" required>
                     <label for="respuesta7A">Phising</label>
                     <input type="radio" id="respuesta7B" name="respuesta7" value="hacking">
                     <label for="respuesta7B">Hacking</label>
@@ -107,7 +107,7 @@
             <section class="preguntaYRespuestas">
                 <h2 class="pregunta">8: ¿Qué significa CSS?</h2>
                 <div class="contenedorRespuestas">
-                    <input type="radio" id="respuesta8A" name="respuesta8" value="computer">
+                    <input type="radio" id="respuesta8A" name="respuesta8" value="computer" required>
                     <label for="respuesta8A">Computer System Syntax</label>
                     <input type="radio" id="respuesta8B" name="respuesta8" value="creative">
                     <label for="respuesta8B">Creative Style Sheet</label>
@@ -118,22 +118,22 @@
                 </div>
             </section>
             <section class="preguntaYRespuestas">
-                <h2 class="pregunta">9: Marca la opción B</h2>
+                <h2 class="pregunta">9: Marca B</h2>
                 <div class="contenedorRespuestas">
-                    <input type="radio" id="respuesta9A" name="respuesta9" value="c">
-                    <label for="respuesta9A">C</label>
+                    <input type="radio" id="respuesta9A" name="respuesta9" value="c" required>
+                    <label for="respuesta9A">A)  C</label>
                     <input type="radio" id="respuesta9B" name="respuesta9" value="a">
-                    <label for="respuesta9B">A</label>
+                    <label for="respuesta9B">B)  A</label>
                     <input type="radio" id="respuesta9C" name="respuesta9" value="d">
-                    <label for="respuesta9C">D</label>
+                    <label for="respuesta9C">C)  D</label>
                     <input type="radio" id="respuesta9D" name="respuesta9" value="b">
-                    <label for="respuesta9D">B</label>
+                    <label for="respuesta9D">D)  B</label>
                 </div>
             </section>
             <section class="preguntaYRespuestas">
                 <h2 class="pregunta">10: ¿Cuántos Alejandros hay en clase?</h2>
                 <div class="contenedorRespuestas">
-                    <input type="radio" id="respuesta10A" name="respuesta10" value="3">
+                    <input type="radio" id="respuesta10A" name="respuesta10" value="3" required>
                     <label for="respuesta10A">3</label>
                     <input type="radio" id="respuesta10B" name="respuesta10" value="4">
                     <label for="respuesta10B">4</label>
@@ -144,6 +144,7 @@
 
 
                     <input type="submit" id="quizSubmit">
+                    <div id="resultado"></div>
                 </div>
             </section>
         </form>
