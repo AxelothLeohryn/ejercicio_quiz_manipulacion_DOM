@@ -15,12 +15,13 @@ document.getElementById('resultado').style.display = 'none' //Ocultar seccion re
 document.getElementById('quiz').addEventListener('submit', function(event) {
 
     event.preventDefault();
-    let contador = 0; //contador para acumular aciertos
+    let contador = 0;       //contador para acumular aciertos
+    let respuestasMarcadas = 0; 
 
     for (let i = 1; i <= 10; i++) { //de respuesta1 a respuesta10
         const preguntaNumero = 'respuesta' + i;
         const respuestaSeleccionada = document.querySelector(`input[name=${preguntaNumero}]:checked`); //input seleccionado (:checked)
-        const respuestaID = respuestaSeleccionada.id; //id del input seleccionado para conseguir su label asociado
+        const respuestaID = respuestaSeleccionada.id; //id del input seleccionado para conseguir su label asociado **
         const respuestaLabel = document.querySelector(`label[for=${respuestaID}]`); //label del input seleccionado, que voy a cambiar
 
         console.log(respuestas[preguntaNumero], respuestaSeleccionada.value);
@@ -32,11 +33,16 @@ document.getElementById('quiz').addEventListener('submit', function(event) {
             respuestaLabel.style.backgroundColor = 'red'
         }
         
-        
+        if (respuestaSeleccionada) {
+            respuestasMarcadas++
+        }  
     }
     console.log(contador);
+    console.log(respuestasMarcadas);
+    if (respuestasMarcadas != 10) {
+        alert('No has respondido a todas las preguntas')  //**No funciona
+    }
     const puntuacionTexto = document.createTextNode(`¡Has acertado ${contador}/10 preguntas!`);
     document.getElementById('resultado').style.display = '' //volver a mostrar seccion resultados
     return document.getElementById('resultado').appendChild(puntuacionTexto);
-
 });
