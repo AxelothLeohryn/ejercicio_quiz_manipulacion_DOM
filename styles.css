@@ -150,14 +150,14 @@ input[type="radio"]:checked+label {
 
 .pregunta {
     animation: 0.5s ease-out 0s 1 slideInFromTop;
-    font-size: 25px;
+    font-size: 22px;
     padding: 0px 40px;
 }
 
 .preguntaYRespuestas {
     scroll-snap-align: start;
     height: 100vh;
-    margin: 0px 60px;
+    margin: 0px 10px;
 
     backdrop-filter: blur(4px);
 
