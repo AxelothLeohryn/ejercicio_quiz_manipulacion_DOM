@@ -56,6 +56,7 @@ main {
     color: rgb(231, 204, 245);
     background-color: #3A86FF;
     padding: 40px;
+    margin-bottom: 20px;
     border-radius: 100px;
     display: flex;
     align-items: center;
