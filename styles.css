@@ -1,5 +1,52 @@
 /* Paleta de colores
 https://coolors.co/palette/ffbe0b-fb5607-ff006e-8338ec-3a86ff*/
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromBottom {
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInFromTop {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+@keyframes zoomIn {
+    0% {
+        transform: scale(110%);
+        z-index: 20;
+    }
+    100% {
+        transform: scale(100%);
+        z-index: 1;
+    }
+}
+
+
 
 
 /* Reset de los estilos por defecto */
@@ -41,7 +88,8 @@ main {
     align-items: center;
     justify-content: center;
 }
-#landingCard > h1 {
+#titulo {
+    animation: 0.5s ease-out 0s 1 slideInFromLeft;
     color: rgb(231, 204, 245);
     text-shadow: 4px 4px 5px rgba(0, 0, 0, 0.2);
     font-size: 10vw;
@@ -53,6 +101,7 @@ main {
 }
 
 #comenzarButton {
+    animation: 0.5s ease-out 0s 1 slideInFromRight;
     text-decoration: none;
     color: rgb(231, 204, 245);
     background-color: #2240ee;
@@ -84,6 +133,8 @@ input[type="radio"] {
 input[type="radio"]:checked+label {
     background-color: #FF006E;
     border-radius: 10px;
+    animation: 0.2s ease-in 0s 1 zoomIn;
+    
 }
 
 /*Para el snap: max-height 100vh del contenedor, overflow-y scroll, y snap-type-y mandatory. Despues en cada elemento snap-align start*/
@@ -98,6 +149,7 @@ input[type="radio"]:checked+label {
 }
 
 .pregunta {
+    animation: 0.5s ease-out 0s 1 slideInFromTop;
     font-size: 25px;
     padding: 0px 40px;
 }
@@ -119,6 +171,7 @@ input[type="radio"]:checked+label {
 }
 
 .contenedorRespuestas {
+    animation: 0.5s ease-out 0s 1 slideInFromBottom;
     height: 75%;
     display: flex;
     flex-direction: column;
@@ -145,6 +198,8 @@ input[type="radio"]:checked+label {
 
 .contenedorRespuestas label:hover {
     background-color: #FB5607;
+    
+    
 }
 
 
@@ -250,7 +305,7 @@ footer > a:active {
 
     .contenedorRespuestas {
         margin: 0px 200px;
-        /*Margen para tablet*/
+        /*Margen para desktop*/
     }
 
     .contenedorRespuestas label {
